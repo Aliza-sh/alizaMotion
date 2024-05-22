@@ -6,9 +6,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresApi
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
 import com.aliza.alizamotion.base.BaseActivity
 import com.aliza.alizamotion.R
 import com.aliza.alizamotion.databinding.ActivityMainBinding
+import com.aliza.alizamotion.ui.movie.FragmentMovie
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun inflateBinding(): ActivityMainBinding =ActivityMainBinding.inflate(layoutInflater)
@@ -22,5 +24,18 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        binding.btnFrgMovie.setOnClickListener {
+            replaceFragment(FragmentMovie())
+        }
+
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container_main, fragment)
+            .addToBackStack(null)
+            .commit()
     }
 }
