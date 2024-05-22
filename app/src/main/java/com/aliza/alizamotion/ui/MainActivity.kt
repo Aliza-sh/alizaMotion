@@ -14,9 +14,10 @@ import com.aliza.alizamotion.ui.bigHeader.FragmentBigHeader
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
+import com.aliza.alizamotion.ui.splash.FragmentSplash
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
-    override fun inflateBinding(): ActivityMainBinding =ActivityMainBinding.inflate(layoutInflater)
+    override fun inflateBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
 
     @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgBigHeader.setOnClickListener {
                 replaceFragment(FragmentBigHeader())
+            }
+            btnFrgSplash.setOnClickListener {
+                replaceFragment(FragmentSplash())
             }
         }
 

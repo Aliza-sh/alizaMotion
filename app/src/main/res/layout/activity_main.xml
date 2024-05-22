@@ -20,7 +20,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/btn_frg_movie"
@@ -28,14 +29,14 @@
                 android:layout_height="300dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="8dp"
-                android:scaleType="fitXY"
-                app:strokeWidth="1dp"
-                app:strokeColor="?attr/colorOutlineVariant"
+                android:scaleType="centerCrop"
                 android:src="@drawable/bg_btn_movie"
-                app:shapeAppearance="@style/roundedImageView"
                 app:layout_constraintEnd_toStartOf="@+id/btn_frg_login"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btn_frg_login"/>
+                app:layout_constraintTop_toTopOf="@+id/btn_frg_login"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/btn_frg_login"
@@ -43,15 +44,15 @@
                 android:layout_height="300dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                app:strokeWidth="1dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_btn_login"
-                app:strokeColor="?attr/colorOutlineVariant"
-                app:shapeAppearance="@style/roundedImageView"
                 android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_btn_login"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btn_frg_movie"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/btn_frg_houses"
@@ -59,14 +60,14 @@
                 android:layout_height="300dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="8dp"
-                android:scaleType="fitXY"
-                app:strokeWidth="1dp"
-                app:strokeColor="?attr/colorOutlineVariant"
+                android:scaleType="centerCrop"
                 android:src="@drawable/bg_btn_houses"
-                app:shapeAppearance="@style/roundedImageView"
                 app:layout_constraintEnd_toStartOf="@+id/btn_frg_big_header"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btn_frg_big_header"/>
+                app:layout_constraintTop_toTopOf="@+id/btn_frg_big_header"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/btn_frg_big_header"
@@ -74,15 +75,46 @@
                 android:layout_height="300dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                app:strokeWidth="1dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bg_btn_big_header"
-                app:strokeColor="?attr/colorOutlineVariant"
-                app:shapeAppearance="@style/roundedImageView"
                 android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_btn_big_header"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btn_frg_houses"
-                app:layout_constraintTop_toBottomOf="@+id/btn_frg_login"/>
+                app:layout_constraintTop_toBottomOf="@+id/btn_frg_login"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_frg_splash"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_btn_splash"
+                app:layout_constraintEnd_toStartOf="@+id/btn_frg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_frg"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_frg"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_frg_splash"
+                app:layout_constraintTop_toBottomOf="@+id/btn_frg_big_header"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
