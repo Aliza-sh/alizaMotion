@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.aliza.alizamotion.base.BaseActivity
 import com.aliza.alizamotion.R
 import com.aliza.alizamotion.databinding.ActivityMainBinding
+import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
 
@@ -32,6 +33,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgLogin.setOnClickListener {
                 replaceFragment(FragmentLogin())
+            }
+            btnFrgHouses.setOnClickListener {
+                replaceFragment(FragmentHouses())
             }
         }
 
