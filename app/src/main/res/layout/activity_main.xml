@@ -64,18 +64,19 @@
                 app:strokeColor="?attr/colorOutlineVariant"
                 android:src="@drawable/bg_btn_houses"
                 app:shapeAppearance="@style/roundedImageView"
-                app:layout_constraintEnd_toStartOf="@+id/btn_frg"
+                app:layout_constraintEnd_toStartOf="@+id/btn_frg_big_header"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btn_frg"/>
+                app:layout_constraintTop_toTopOf="@+id/btn_frg_big_header"/>
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/btn_frg"
+                android:id="@+id/btn_frg_big_header"
                 android:layout_width="0dp"
                 android:layout_height="300dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 app:strokeWidth="1dp"
                 android:scaleType="fitXY"
+                android:src="@drawable/bg_btn_big_header"
                 app:strokeColor="?attr/colorOutlineVariant"
                 app:shapeAppearance="@style/roundedImageView"
                 android:layout_marginEnd="16dp"
