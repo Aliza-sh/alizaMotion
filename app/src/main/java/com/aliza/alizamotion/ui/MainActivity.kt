@@ -14,6 +14,7 @@ import com.aliza.alizamotion.ui.bigHeader.FragmentBigHeader
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
+import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.splash.FragmentSplash
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -44,6 +45,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgSplash.setOnClickListener {
                 replaceFragment(FragmentSplash())
+            }
+            btnFrgSearchBox.setOnClickListener {
+                replaceFragment(FragmentSearchBox())
             }
         }
 
