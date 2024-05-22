@@ -12,6 +12,7 @@ import com.aliza.alizamotion.R
 import com.aliza.alizamotion.databinding.ActivityMainBinding
 import com.aliza.alizamotion.ui.bigHeader.FragmentBigHeader
 import com.aliza.alizamotion.ui.houses.FragmentHouses
+import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
 import com.aliza.alizamotion.ui.profile.FragmentProfile
@@ -52,6 +53,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgProfile.setOnClickListener {
                 replaceFragment(FragmentProfile())
+            }
+            btnFrgLockScreen.setOnClickListener {
+                replaceFragment(FragmentLockScreen())
             }
         }
 

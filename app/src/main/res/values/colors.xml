@@ -12,6 +12,11 @@
     <color name="grayDark">#606060</color>
     <color name="bg">#F6F6F6</color>
     <color name="blue">#1E88E5</color>
+    <color name="quillGray">#D0CFCC</color>
+    <color name="oxfordBlue">#343F56</color>
+    <color name="athensGray">#E1E5EA</color>
+    <color name="cadetBlue">#A7BBC7</color>
+    <color name="emerald">#50CB93</color>
 
     <color name="md_theme_primary">#415F91</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
