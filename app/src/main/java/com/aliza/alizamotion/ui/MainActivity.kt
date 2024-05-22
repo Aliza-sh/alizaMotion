@@ -14,6 +14,7 @@ import com.aliza.alizamotion.ui.bigHeader.FragmentBigHeader
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
+import com.aliza.alizamotion.ui.profile.FragmentProfile
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.splash.FragmentSplash
 
@@ -48,6 +49,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgSearchBox.setOnClickListener {
                 replaceFragment(FragmentSearchBox())
+            }
+            btnFrgProfile.setOnClickListener {
+                replaceFragment(FragmentProfile())
             }
         }
 
