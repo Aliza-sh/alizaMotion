@@ -4,8 +4,8 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@+id/image2"
-        motion:constraintSetStart="@id/image3"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
         motion:duration="1000">
         <KeyFrameSet>
         </KeyFrameSet>
@@ -15,7 +15,7 @@
             motion:touchAnchorSide="right" />
     </Transition>
 
-    <ConstraintSet android:id="@+id/image3">
+    <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@+id/check"
             motion:layout_constraintEnd_toEndOf="@+id/unlockBase"
@@ -41,7 +41,7 @@
         </Constraint>
     </ConstraintSet>
 
-    <ConstraintSet android:id="@+id/image2">
+    <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/unlockTitle"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -86,7 +86,7 @@
     </ConstraintSet>
     <ConstraintSet
         android:id="@+id/unlocked"
-        motion:deriveConstraintsFrom="@+id/image2" >
+        motion:deriveConstraintsFrom="@+id/end" >
         <Constraint
             android:id="@+id/swipeView"
             android:layout_width="80dp"
@@ -109,7 +109,7 @@
             android:scaleY="0" />
     </ConstraintSet>
     <Transition
-        motion:constraintSetStart="@+id/image2"
+        motion:constraintSetStart="@+id/end"
         motion:constraintSetEnd="@+id/unlocked"
         motion:autoTransition="animateToEnd"
         motion:duration="300"/>
