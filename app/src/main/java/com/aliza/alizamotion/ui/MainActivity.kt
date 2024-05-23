@@ -19,6 +19,7 @@ import com.aliza.alizamotion.ui.movie.FragmentMovie
 import com.aliza.alizamotion.ui.profile.FragmentProfile
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.splash.FragmentSplash
+import com.aliza.alizamotion.ui.story.FragmentStory
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun inflateBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -60,6 +61,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgHousesImages.setOnClickListener {
                 replaceFragment(FragmentHousesImages())
+            }
+            btnFrgStory.setOnClickListener {
+                replaceFragment(FragmentStory())
             }
         }
 
