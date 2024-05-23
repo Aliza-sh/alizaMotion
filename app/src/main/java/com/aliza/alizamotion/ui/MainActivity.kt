@@ -15,6 +15,7 @@ import com.aliza.alizamotion.ui.checkList.FragmentCheckList
 import com.aliza.alizamotion.ui.fabMenu.FragmentFabMenu
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.housesImages.FragmentHousesImages
+import com.aliza.alizamotion.ui.housesImages2.FragmentHousesImages2
 import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
@@ -76,6 +77,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgProfileTelegram.setOnClickListener {
                 replaceFragment(FragmentProfileTelegram())
+            }
+            btnFrgHousesImages2.setOnClickListener {
+                replaceFragment(FragmentHousesImages2())
             }
         }
 
