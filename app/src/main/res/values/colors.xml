@@ -19,6 +19,9 @@
     <color name="emerald">#50CB93</color>
     <color name="quillGray50">#50D0CFCC</color>
     <color name="purple_500">#FF6200EE</color>
+    <color name="alabaster">#F5EBE1</color>
+    <color name="slateBlue">#6359cc</color>
+    <color name="oriolesOrange">#F15F43</color>
 
     <color name="md_theme_primary">#415F91</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
