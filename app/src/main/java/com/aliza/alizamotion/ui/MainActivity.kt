@@ -19,6 +19,7 @@ import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.movie.FragmentMovie
 import com.aliza.alizamotion.ui.profile.FragmentProfile
+import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.splash.FragmentSplash
 import com.aliza.alizamotion.ui.story.FragmentStory
@@ -72,6 +73,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgCheckList.setOnClickListener {
                 replaceFragment(FragmentCheckList())
+            }
+            btnFrgProfileTelegram.setOnClickListener {
+                replaceFragment(FragmentProfileTelegram())
             }
         }
 
