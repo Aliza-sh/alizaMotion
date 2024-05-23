@@ -18,6 +18,7 @@
     <color name="cadetBlue">#A7BBC7</color>
     <color name="emerald">#50CB93</color>
     <color name="quillGray50">#50D0CFCC</color>
+    <color name="purple_500">#FF6200EE</color>
 
     <color name="md_theme_primary">#415F91</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>

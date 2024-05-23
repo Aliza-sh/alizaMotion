@@ -11,6 +11,7 @@ import com.aliza.alizamotion.base.BaseActivity
 import com.aliza.alizamotion.R
 import com.aliza.alizamotion.databinding.ActivityMainBinding
 import com.aliza.alizamotion.ui.bigHeader.FragmentBigHeader
+import com.aliza.alizamotion.ui.fabMenu.FragmentFabMenu
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.housesImages.FragmentHousesImages
 import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
@@ -64,6 +65,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgStory.setOnClickListener {
                 replaceFragment(FragmentStory())
+            }
+            btnFrgFabMenu.setOnClickListener {
+                replaceFragment(FragmentFabMenu())
             }
         }
 
