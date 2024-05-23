@@ -53,7 +53,7 @@
                 android:rotation="0"
                 android:rotationY="15"
                 android:translationX="-40dp"
-                motion:framePosition="0"
+                motion:framePosition="70"
                 motion:motionTarget="@+id/img1" />
         </KeyFrameSet>
     </Transition>

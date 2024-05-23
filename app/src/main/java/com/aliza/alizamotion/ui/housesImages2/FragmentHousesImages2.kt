@@ -6,9 +6,7 @@ import com.aliza.alizamotion.R
 import com.aliza.alizamotion.base.BaseFragment
 import com.aliza.alizamotion.databinding.FragmentHousesImages2Binding
 
-class FragmentHousesImages2 : BaseFragment<FragmentHousesImages2Binding>(
-    FragmentHousesImages2Binding::inflate
-) {
+class FragmentHousesImages2 : BaseFragment<FragmentHousesImages2Binding>(FragmentHousesImages2Binding::inflate) {
 
     private var index = 0
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
