@@ -12,6 +12,7 @@ import com.aliza.alizamotion.R
 import com.aliza.alizamotion.databinding.ActivityMainBinding
 import com.aliza.alizamotion.ui.bigHeader.FragmentBigHeader
 import com.aliza.alizamotion.ui.checkList.FragmentCheckList
+import com.aliza.alizamotion.ui.drawerMenu.FragmentDrawerMenu
 import com.aliza.alizamotion.ui.fabMenu.FragmentFabMenu
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.housesImages.FragmentHousesImages
@@ -88,6 +89,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgHousesImages3.setOnClickListener {
                 replaceFragment(FragmentHousesImages3())
+            }
+            btnFrgDrawerMenu.setOnClickListener {
+                replaceFragment(FragmentDrawerMenu())
             }
         }
 
