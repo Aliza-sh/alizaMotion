@@ -16,6 +16,7 @@ import com.aliza.alizamotion.ui.fabMenu.FragmentFabMenu
 import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.housesImages.FragmentHousesImages
 import com.aliza.alizamotion.ui.housesImages2.FragmentHousesImages2
+import com.aliza.alizamotion.ui.housesImages3.FragmentHousesImages3
 import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.menuVertical.FragmentMenuVertical
@@ -84,6 +85,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgMenuVertical.setOnClickListener {
                 replaceFragment(FragmentMenuVertical())
+            }
+            btnFrgHousesImages3.setOnClickListener {
+                replaceFragment(FragmentHousesImages3())
             }
         }
 
