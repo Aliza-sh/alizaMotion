@@ -302,6 +302,37 @@
                 app:strokeColor="?attr/colorOutlineVariant"
                 app:strokeWidth="1dp" />
 
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_frg_loading_button"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_btn_loading_button"
+                app:layout_constraintEnd_toStartOf="@+id/btn_frg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_frg"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_frg"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_frg_loading_button"
+                app:layout_constraintTop_toBottomOf="@+id/btn_frg_expandable"
+                app:shapeAppearance="@style/roundedImageView"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth="1dp" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

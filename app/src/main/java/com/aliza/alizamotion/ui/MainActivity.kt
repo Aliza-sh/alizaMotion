@@ -19,6 +19,7 @@ import com.aliza.alizamotion.ui.houses.FragmentHouses
 import com.aliza.alizamotion.ui.housesImages.FragmentHousesImages
 import com.aliza.alizamotion.ui.housesImages2.FragmentHousesImages2
 import com.aliza.alizamotion.ui.housesImages3.FragmentHousesImages3
+import com.aliza.alizamotion.ui.loadingButton.FragmentLoadingButton
 import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.menuVertical.FragmentMenuVertical
@@ -96,6 +97,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgExpandable.setOnClickListener {
                 replaceFragment(FragmentExpandable())
+            }
+            btnFrgLoadingButton.setOnClickListener {
+                replaceFragment(FragmentLoadingButton())
             }
         }
 
