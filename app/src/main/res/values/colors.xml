@@ -23,6 +23,7 @@
     <color name="slateBlue">#6359cc</color>
     <color name="oriolesOrange">#F15F43</color>
     <color name="gray2">#858585</color>
+    <color name="purple_700">#FF3700B3</color>
 
     <color name="md_theme_primary">#415F91</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>

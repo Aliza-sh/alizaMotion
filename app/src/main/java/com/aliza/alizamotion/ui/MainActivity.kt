@@ -24,6 +24,7 @@ import com.aliza.alizamotion.ui.lockScreen.FragmentLockScreen
 import com.aliza.alizamotion.ui.login.FragmentLogin
 import com.aliza.alizamotion.ui.menuVertical.FragmentMenuVertical
 import com.aliza.alizamotion.ui.movie.FragmentMovie
+import com.aliza.alizamotion.ui.movieApp.FragmentMovieApp
 import com.aliza.alizamotion.ui.profile.FragmentProfile
 import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
@@ -100,6 +101,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgLoadingButton.setOnClickListener {
                 replaceFragment(FragmentLoadingButton())
+            }
+            btnFrgMovieApp.setOnClickListener {
+                replaceFragment(FragmentMovieApp())
             }
         }
 
