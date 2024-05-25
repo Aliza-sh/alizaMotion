@@ -31,6 +31,7 @@ import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.splash.FragmentSplash
 import com.aliza.alizamotion.ui.story.FragmentStory
+import com.aliza.alizamotion.ui.youtube.FragmentYoutube
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun inflateBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -108,6 +109,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgMenuVertical2.setOnClickListener {
                 replaceFragment(FragmentMenuVertical2())
+            }
+            btnFrgYoutube.setOnClickListener {
+                replaceFragment(FragmentYoutube())
             }
         }
 
