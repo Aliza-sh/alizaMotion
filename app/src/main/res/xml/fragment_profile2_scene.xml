@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="30"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/profileAvatar"
+                motion:percentY="0.90" />
+            <KeyAttribute
+                motion:framePosition="1"
+                motion:motionTarget="@+id/profileFollowBtn">
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="@color/blue" />
+            </KeyAttribute>
+        </KeyFrameSet>
+        <OnSwipe motion:touchAnchorId="@+id/profileList" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/profileCover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="saturation"
+                motion:customFloatValue="1.0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/profileAvatar">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@color/black" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/profileFollowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/profileNumbersLay">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@color/white" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/profileCover"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="saturation"
+                motion:customFloatValue="0.0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/profileAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/profileCover"
+            motion:layout_constraintStart_toStartOf="@+id/profileCover"
+            motion:layout_constraintTop_toTopOf="@+id/profileCover" />
+        <Constraint
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/profileAvatar"
+            motion:layout_constraintStart_toEndOf="@+id/profileAvatar"
+            motion:layout_constraintTop_toTopOf="@+id/profileAvatar">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@color/white" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/profileInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/profileName" />
+        <Constraint
+            android:id="@+id/profileNumbersLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/profileInfo" />
+        <Constraint
+            android:id="@+id/profileFollowBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/profileAvatar"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/profileAvatar">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@color/blue" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/profileList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/profileCover" />
+        <Constraint
+            android:id="@+id/img_add_person"
+            motion:layout_constraintEnd_toEndOf="@+id/profileFollowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/profileFollowBtn"
+            motion:layout_constraintTop_toTopOf="@+id/profileFollowBtn"
+            motion:layout_constraintStart_toStartOf="@+id/profileFollowBtn" />
+    </ConstraintSet>
+
+</MotionScene>
