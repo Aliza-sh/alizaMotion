@@ -28,6 +28,7 @@ import com.aliza.alizamotion.ui.movie.FragmentMovie
 import com.aliza.alizamotion.ui.movieApp.FragmentMovieApp
 import com.aliza.alizamotion.ui.movieCard3d.FragmentMovieCard3D
 import com.aliza.alizamotion.ui.profile.FragmentProfile
+import com.aliza.alizamotion.ui.profile2.FragmentProfile2
 import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.splash.FragmentSplash
@@ -116,6 +117,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgMovieCard3d.setOnClickListener {
                 replaceFragment(FragmentMovieCard3D())
+            }
+            btnFrgProfile2.setOnClickListener {
+                replaceFragment(FragmentProfile2())
             }
         }
 
