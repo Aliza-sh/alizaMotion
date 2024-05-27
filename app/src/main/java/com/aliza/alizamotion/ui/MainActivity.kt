@@ -26,6 +26,7 @@ import com.aliza.alizamotion.ui.menuVertical.FragmentMenuVertical
 import com.aliza.alizamotion.ui.menuVertical2.FragmentMenuVertical2
 import com.aliza.alizamotion.ui.movie.FragmentMovie
 import com.aliza.alizamotion.ui.movieApp.FragmentMovieApp
+import com.aliza.alizamotion.ui.movieCard3d.FragmentMovieCard3D
 import com.aliza.alizamotion.ui.profile.FragmentProfile
 import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
@@ -112,6 +113,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgYoutube.setOnClickListener {
                 replaceFragment(FragmentYoutube())
+            }
+            btnFrgMovieCard3d.setOnClickListener {
+                replaceFragment(FragmentMovieCard3D())
             }
         }
 
