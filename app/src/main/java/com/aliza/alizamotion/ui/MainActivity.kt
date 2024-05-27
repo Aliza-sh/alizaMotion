@@ -31,6 +31,7 @@ import com.aliza.alizamotion.ui.profile.FragmentProfile
 import com.aliza.alizamotion.ui.profile2.FragmentProfile2
 import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
+import com.aliza.alizamotion.ui.snapChat.FragmentSnapChat
 import com.aliza.alizamotion.ui.splash.FragmentSplash
 import com.aliza.alizamotion.ui.story.FragmentStory
 import com.aliza.alizamotion.ui.youtube.FragmentYoutube
@@ -120,6 +121,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgProfile2.setOnClickListener {
                 replaceFragment(FragmentProfile2())
+            }
+            btnFrgSnapchat.setOnClickListener {
+                replaceFragment(FragmentSnapChat())
             }
         }
 
