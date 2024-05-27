@@ -30,6 +30,7 @@ import com.aliza.alizamotion.ui.movieCard3d.FragmentMovieCard3D
 import com.aliza.alizamotion.ui.profile.FragmentProfile
 import com.aliza.alizamotion.ui.profile2.FragmentProfile2
 import com.aliza.alizamotion.ui.profileTelegram.FragmentProfileTelegram
+import com.aliza.alizamotion.ui.project.splash.FragmentProjectSplash
 import com.aliza.alizamotion.ui.searchbox.FragmentSearchBox
 import com.aliza.alizamotion.ui.snapChat.FragmentSnapChat
 import com.aliza.alizamotion.ui.splash.FragmentSplash
@@ -124,6 +125,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             }
             btnFrgSnapchat.setOnClickListener {
                 replaceFragment(FragmentSnapChat())
+            }
+            btnFrgProject.setOnClickListener {
+                replaceFragment(FragmentProjectSplash())
             }
         }
 
